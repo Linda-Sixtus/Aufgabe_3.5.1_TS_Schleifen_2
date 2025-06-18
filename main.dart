@@ -12,12 +12,14 @@ void main (){
 List<String> fruits = ["Apfel", "Banane", "Kirsche"];
 List<String> berries = ["Erdbeere", "Himbeere", "Blaubeere"];
 
+//Listen(Element)basiert (vereinfacht). Itterativ itterable
 for (String fruit in fruits) {
   for (String berry in berries) {
     print ("Möglicher Smoothie: $fruit und $berry");
   }
 }
 
+//Indexbasiert.
 for ( int i = 0; i < fruits.length; i++){
   for (int j = 0; j< berries.length; j++){
     print ("Das ist die Liste: ${fruits[i]} und ${berries[j]}");
